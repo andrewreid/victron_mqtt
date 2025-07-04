@@ -18,3 +18,12 @@ class EvChargerMode(VictronEnum):
     Manual = (0, "Manual")
     Auto = (1, "Auto")
     ScheduledCharge = (2, "Scheduled Charge")
+
+
+class EssMode(VictronEnum):
+    """Energy Storage System operating mode."""
+
+    OptimizedWithBatteryLife = (1, "Optimized (with BatteryLife)")
+    OptimizedWithoutBatteryLife = (2, "Optimized (without BatteryLife)")
+    KeepBatteriesCharged = (3, "Keep batteries charged")
+    ExternalControl = (4, "External control")
